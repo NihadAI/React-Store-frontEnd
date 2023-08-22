@@ -18,7 +18,7 @@ function App() {
         <NavBar />
         <div className="content-container">
           <Switch>
-            <Route path="/favourites" component={Favourites}/>
+            <Route path="/favorites" component={Favourites}/>
             <Route path="/cart" component={Cart} />
             <Route path="/not-found" component={NotFound} />
             <Route path="/" exact component={Home} />

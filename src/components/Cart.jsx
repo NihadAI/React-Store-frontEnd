@@ -157,43 +157,43 @@ class Cart extends Component {
             </div>
           </div>
         )}
-        <form onSubmit={this.handleSubmit}>
-        <FormLabel>First Name</FormLabel>
-        <FormControl
-          type="text"
-          placeholder="Enter your first name"
-          required
-          onChange={(e) => this.handleChange({ name: "firstName", value: e.target.value })}
-        />
-        <FormLabel>Last Name</FormLabel>
-        <FormControl
-          type="text"
-          placeholder="Enter your last name"
-          required
-          onChange={(e) => this.handleChange({ name: "lastName", value: e.target.value })}
-        />
-        <FormLabel>Phone</FormLabel>
-        <FormControl
-          type="text"
-          placeholder="Enter your phone number"
-          onChange={(e) => this.handleChange({ name: "phone", value: e.target.value })}
-        />
-        <FormLabel>Email</FormLabel>
-        <FormControl
-          type="email"
-          placeholder="Enter your email address"
-          required
-          onChange={(e) => this.handleChange({ name: "email", value: e.target.value })}
-        />
-        <FormLabel>Delivery Address</FormLabel>
-        <FormControl
-          type="text"
-          placeholder="Enter your delivery address"
-          required
-          onChange={(e) => this.handleChange({ name: "deliveryAddress", value: e.target.value })}
-        />
-        <Button type="submit">Submit</Button>
-      </form>
+       <form onSubmit={this.handleSubmit}>
+  <FormLabel htmlFor="firstName">First Name</FormLabel>
+  <FormControl
+    type="text"
+    placeholder="Enter your first name"
+    required
+    onChange={(e) => this.handleChange({ name: "firstName", value: e.target.value })}
+  />
+  <FormLabel htmlFor="lastName">Last Name</FormLabel>
+  <FormControl
+    type="text"
+    placeholder="Enter your last name"
+    required
+    onChange={(e) => this.handleChange({ name: "lastName", value: e.target.value })}
+  />
+  <FormLabel htmlFor="phone">Phone</FormLabel>
+  <FormControl
+    type="text"
+    placeholder="Enter your phone number"
+    onChange={(e) => this.handleChange({ name: "phone", value: e.target.value })}
+  />
+  <FormLabel htmlFor="email">Email</FormLabel>
+  <FormControl
+    type="email"
+    placeholder="Enter your email address"
+    required
+    onChange={(e) => this.handleChange({ name: "email", value: e.target.value })}
+  />
+  <FormLabel htmlFor="deliveryAddress">Delivery Address</FormLabel>
+  <FormControl
+    type="text"
+    placeholder="Enter your delivery address"
+    required
+    onChange={(e) => this.handleChange({ name: "deliveryAddress", value: e.target.value })}
+  />
+  <Button type="submit">Submit</Button>
+</form>
       </div>
     );
   }
